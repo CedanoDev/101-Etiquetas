@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>102 Etiquetas HTML</title>
+<head>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    tr:nth-child(even){background-color: #f2f2f2;}
+    th {
+      background-color: #4c51af;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h2>Referencia de Etiquetas HTML</h2>
+  <p>Estas son las 102 etiquetas mas importantes del HTML</p><br>
+  <h2>ETIQUETAS INICIALES O DE RAIZ</h2>
+  <table>
+    <tr>
+      <th>Etiqueta</th>
+      <th>Descripción</th>
+      <th>Ejemplo</th>
+      <th>Elemento adicional</th>
+    </tr>
+
+    <!--TAGS INICIALES O DE RAIZ-->
+    <tr>
+      <td><code>&lt;!DOCTYPE html&gt;</code></td>
+      <td> Indica al navegador que el documento está basado en el estándar HTML5</td>
+      <td><p><code>&lt;!DOCTYPE html&gt;</code></p></td>
+      <td><p>Debajo de el se encuentran todas las etiquetas HTML</p></td>
+    </tr>
+    <tr>
+        <td><code>&lt;html&gt; &lt;/html&gt;</code></td>
+        <td>Representa la raíz de un documento HTML. Todos los demás elementos de la <br>estructura HTML deben ser recogidos dentro de estas etiquetas.</td>
+        <td><p><strong>&lt;html&gt;</strong><br>
+            &lt;head&gt;<br>
+              &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+              &lt;/body&gt;<br>
+              <strong>&lt;/html&gt;</strong></p></td>
+        <td><p>Dentro de estas etiquetas estaran las etiquetas body, head, y footer.</p></td>
+      </tr>
+      </table>
+
+      <h2>METADATOS DEL DOCUMENTO</h2>
+    <table>
+        <tr>
+            <th>Etiqueta</th>
+            <th>Descripción</th>
+            <th>Ejemplo</th>
+            <th>Elemento adicional</th>
+          </tr>
+
+      <!--METADATOS DEL DOCUMENTO-->
+      <tr>
+        <td><code>&lt;head&gt; &lt;/head&gt;</code></td>
+        <td>Representa una colección de metadatos acerca del documento, incluyendo <br>enlaces a, o definiciones de, scripts y hojas de estilo.</td>
+        <td><p><strong>&lt;head&gt;</strong><br>
+             &lt;title&gt;Ejemplo de código HTML&lt;/title&gt;<br>
+              &lt;link rel="stylesheet" href="styles.css"&gt;<br>
+             &lt;script src="script.js"&gt;&lt;/script&gt;<br>
+            <strong>&lt;/head&gt;</strong></p></td>
+        <td><p>Dentro de esta etiqueta estaran las etiquetas title, link, script <br> entre otras.</p></td>
+      </tr>
+      <tr>
+        <td><code>&lt;title&gt; &lt;/title&gt;</code></td>
+        <td>Etiqueta usada para definir el título de la página web.</td>
+        <td>&lt;title&gt;Ejemplo de código HTML&lt;/title&gt;</td>
+        <td><p>Esta esta anidada dentro de la etiqueta head.</p></td>
+      </tr>
+      <tr>
+        <td><code>&lt;link&gt;</code></td>
+        <td>Se usa para enlazar recursos externos al documento HTML. El ejemplo más <br>común son las hojas de estilos CSS.</td>
+        <td><p>&lt;link rel="stylesheet" href="styles.css"&gt;</p></td>
+        <td><p>Es acompanada de los atributos rel, y href</p></td>
+      </tr>
+      <tr>
+        <td><code>&lt;meta&gt;</code></td>
+        <td>Etiqueta usada para definir otros metadatos que no se pueden definir con <br>una etiqueta HTML especifica. Por ejemplo, para definir el autor del <br>sitio, o la descripción del mismo.</td>
+        <td><p>&lt;meta charset="UTF-8"&gt;</p></td>
+        <td><p>Es acompanada de loa atributos charset, property y content.</p></td>
+      </tr>
+      <tr>
+        <td><code>&lt;style&gt; &lt;/style&gt;</code></td>
+        <td>Etiquetas usadas para introducir código CSS en línea, es decir, en el <br>propio documento HTML.</td>
+        <td><p>&lt;style&gt;<br>
+            body {<br>
+              background-color: lightblue;<br>
+            }<br>
+            h1 {<br>
+              color: navy;<br>
+              text-align: center;<br>
+            }<br>
+          &lt;/style&gt;</p></td>
+        <td><p>Tiene atributos como background-color, color, tex-aling <br>entr otros</p></td>
+      </tr>
+    </table>
+
+    <h2>ETIQUETAS DE SECCIONES O PARA ESTRUCTURAR EL HTML</h2>
+    <table>
+        <tr>
+            <th>Etiqueta</th>
+            <th>Descripción</th>
+            <th>Ejemplo</th>
+            <th>Elemento adicional</th>
+          </tr>
+
+      <!--TAGS DE SECCIONES O PARA ESTRUCTURAR EL HTML-->
+      <tr>
+        <td><code>&lt;body&gt; &lt;/body&gt;</code></td>
+        <td>Al contrario que la etiqueta de metadatos <head>, todo lo que quieras <br>mostrar en la página web debe ir recogido dentro de las etiquetas <br>de apertura y cierre de &lt;body&gt;. Este contenido será el que se muestre en la web.</td>
+        <td><p>&lt;body&gt;<br>
+            &lt;h1&gt;¡Hola, mundo!&lt;/h1&gt;<br>
+            &lt;p&gt;Este es mi primer párrafo.&lt;/p&gt;<br>
+          <br>
+            &lt;img src="mi_imagen.jpg" alt="Una imagen descriptiva"&gt;<br>
+          &lt;/body&gt;</p></td>
+        <td><p>Dentro de la etiqueta body van etiquetas como las de form, img, video, p, entre otras</p></td>
+      </tr>
+      <tr>
+        <td><code>&lt;nav&gt; &lt;/nav&gt;</code></td>
+        <td>Usadas para definir el contenido que será la sección de navegación de la web.</td>
+        <td><p>&lt;nav&gt;<br>
+            &lt;ul&gt;<br>
+              &lt;li&gt;&lt;a href="index.html"&gt;Inicio&lt;/a&gt;&lt;/li&gt;<br>
+              &lt;li&gt;&lt;a href="acerca-de.html"&gt;Acerca de&lt;/a&gt;&lt;/li&gt;<br>
+              &lt;li&gt;&lt;a href="contacto.html"&gt;Contacto&lt;/a&gt;&lt;/li&gt;<br>
+            &lt;/ul&gt;<br>
+          &lt;/nav&gt;</p></td>
+        <td><p>Se pueden incluir listas ordenadas y des-ordenada (ul, ol)</p></td>
+      </tr>
+      <tr>
+        <td><code>&lt;main&gt; &lt;/main&gt;</code></td>
+        <td>Se usa para definir el contenido principal del documento. Solamente puede <br>existir uno por documento.</td>
+        <td><p>&lt;main&gt;<br>
+            &lt;h2&gt;Contenido principal&lt;/h2&gt;<br>
+            &lt;p&gt;Este es el contenido principal de mi página web.&lt;/p&gt;<br>
+            &lt;p&gt;Aquí puedes agregar más texto, imágenes, videos, etc.&lt;/p&gt;<br>
+          &lt;/main>&gt;</p></td>
+        <td><p>Elementos adicionales de esta etiqueta son etiquetas h... p, <br>entre otras</p></td>
+      </tr>
+      <tr>
+        <td><code>&lt;section&gt; &lt;section&gt;</code></td>
+        <td>Define una sección del documento</td>
+        <td><p>&lt;section&gt;<br>
+            &lt;h2&gt;Acerca de nosotros&lt;/h2&gt;<br>
+            &lt;p&gt;Somos una empresa dedicada a...&lt;/p&gt;<br>
+            &lt;p&gt;Nuestra misión es...&lt;/p&gt;<br>
+          &lt;/section&gt;</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;address&gt; &lt;/address&gt;</code></td>
+        <td>aporta información de contacto para su &lt;article&gt; más cercano o ancestro <br>&lt;body&gt; en el último caso lo aplica a todo el documento.</td>
+        <td><p>&lt;address&gt;<br>
+            &lt;a href="mailto:contacto@ejemplo.com"&gt;contacto@ejemplo.com&lt;/a&gt;<br>
+            Calle Falsa 123<br>
+            Ciudad, País
+          &lt;/address&gl;</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;article&gt; &lt;/article&gt;</code></td>
+        <td>Define contenido independiente de la web.</td>
+        <td><p>&lt;article&gt;
+            &lt;h2&gt;Mi primer artículo&lt;/h2&gt;
+            &lt;p&gt;Este es un artículo de ejemplo. Contiene información relevante <br>y puede ser compartido de forma independiente.&lt;/p&gt;
+            &lt;p&gt;Aquí puedes agregar más texto, imágenes, enlaces, etc.&lt;/p&gt;
+          &lt;/article&gt;</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;aside&gt; &lt;/aside&gt;</code></td>
+        <td>Dentro de estas etiquetas suele alojarse el contenido adicional de la web. <br>Suele ser contenido relacionado con la web pero de poca importancia</td>
+        <td><p>&lt;article&gt;<br>
+            &lt;h2&gt;Mi artículo principal&lt;/h2&gt;<br>
+            &lt;p&gt;Este es el contenido principal de mi artículo.&lt;/p&gt;<br>
+            &lt;aside&gt;<br>
+              &lt;h3&gt;Información adicional&lt;/h3&gt;<br>
+              &lt;p&gt;Aquí puedes agregar contenido relacionado, como una biografía <br>del autor, enlaces a artículos relacionados, anuncios o widgets.&lt;/p&gt;<br>
+            &lt;/aside&gt;<br>
+          &lt;/article&gt;</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;h1&gt; &lt;h2&gt; &lt;h3&gt; &lt;h4&gt; &lt;h5&gt; &lt;h6&gt;</code></td>
+        <td>Son etiquetas HTML muy importantes, ya que son usadas para jerarquizar el <br>contenido de la web. Las etiquetas se usan para explicar <br>brevemente el contenido que irá a continuación.</td>
+        <td><p>&lt;h1&gt;Esto es un titulo nivel 1&lt;h1&gt;<br>
+            &lt;h2&gt;Esto es un titulo nivel 2&lt;h2&gt;<br>
+            &lt;h3&gt;Esto es un titulo nivel 3&lt;h3&gt;<br>
+            &lt;h4&gt;Esto es un titulo nivel 4&lt;h4&gt;<br>
+            &lt;h5&gt;Esto es un titulo nivel 5&lt;h5&gt;<br>
+            &lt;h6&gt;Esto es un titulo nivel 6&lt;h6&gt;
+        </p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;header&gt; &lt;/header&gt;</code></td>
+        <td>Se usan para definir la cabecera de la página web. Suele contener el <br>logotipo, menú de navegación, etc.</td>
+        <td><p>&lt;header&gt;<br>
+            &lt;h1&gt;Mi Sitio Web&lt;/h1&gt;<br>
+            &lt;nav&gt;<br>
+            &lt;ul&gt;<br>
+              &lt;li&gt;&lt;a href="index.html"&gt;Inicio&lt;/a&gt;&lt;/li&gt;<br>
+              &lt;li&gt;&lt;a href="acerca-de.html"&gt;Acerca de&lt;/a&gt;&lt;/li&gt;<br>
+              &lt;li&gt;&lt;a href="contacto.html"&gt;Contacto&lt;/a&gt;&lt;/li&gt;<br>
+            &lt;/ul&gt;<br>
+          &lt;/nav&gt;<br>
+          &lt;/header&gt;</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;footer&gt; &lt;/footer&gt;</code></td>
+        <td>Usadas para definir el pie de página.</td>
+        <td><p>&lt;footer&gt;<br>
+            &lt;p&gt;&copy; 2023 Mi Sitio Web. Todos los derechos reservados.&lt;/p&gt;<br>
+            &lt;nav&gt;<br>
+              &lt;ul&gt;<br>
+                &lt;li&gt;&lt;a href="#"&gt;Contacto&lt;/a&gt;&lt;/li&gt;<br>
+                &lt;li&gt;&lt;a href="#"&gt;Política de privacidad&lt;/a&gt;&lt;/li&gt;<br>
+              &lt;/ul&gt;<br>
+            &lt;/nav&gt;<br>
+          &lt;/footer&gt;</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+    </table>
+
+    <h2>ETIQUETAS PARA LA AGRUPACION DE CONTENIDO</h2>
+    <table>
+        <tr>
+            <th>Etiqueta</th>
+            <th>Descripción</th>
+            <th>Ejemplo</th>
+            <th>Elemento adicional</th>
+          </tr>
+
+      <!--TAGS PARA LA AGRUPACION DE CONTENIDO-->
+      <tr>
+        <td><code>&lt;p&gt; &lt;/p&gt;</code></td>
+        <td>Etiqueta usada para escribir párrafos de texto.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;hr&gt;</code></td>
+        <td>Etiqueta utilizada para «romper» entre dos secciones de una web. <br>Usada comúnmente como separador.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;pre&gt; &lt;/pre&gt;</code></td>
+        <td>Usada para pegar texto manteniendo el pre formato propio del texto.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;blockquote&gt; &lt;/blockquote&gt;</code></td>
+        <td>Se usan para indicar que el contenido es texto citado.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;ol&gt; &lt;/ol&gt;</code></td>
+        <td>Etiquetas para crear una lista ordenada</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;ul&gt; &lt;/ul&gt;</code></td>
+        <td>Etiquetas para crear una lista des-ordenada</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;li&gt; &lt;/li&gt;</code></td>
+        <td>Etiquetas que recogen el contenido de un elemento de una lista, <br>sea ordenada o no.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;dl&gt; &lt;/dl&gt;</code></td>
+        <td>Usada para crear una lista de definiciones.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;dt&gt; &lt;/dt&gt;</code></td>
+        <td>Representa un término definido por la siguiente etiqueta &lt;dd&gt;</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;dd&gt; &lt;/dd&gt;</code></td>
+        <td>Se usa para definir los términos listados antes que él.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;figure&gt; &lt;/figure&gt;</code></td>
+        <td>Indica una figura ilustrada como parte del documento HTML5.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;figcaption&gt; &lt;/figcaption&gt;</code></td>
+        <td>Utilizada para definir la leyenda de una figura.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;div&gt; &lt;/div&gt;</code></td>
+        <td>Etiqueta común utilizada para crear un contenedor genérico.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+    </table>
+
+    <h2>ETIQUETAS SEMANTICAS PARA TEXTO</h2>
+    <table>
+        <tr>
+            <th>Etiqueta</th>
+            <th>Descripción</th>
+            <th>Ejemplo</th>
+            <th>Elemento adicional</th>
+          </tr>
+
+      <!--ETIQUETAS SEMANTICAS PARA TEXTO-->
+      <tr>
+        <td><code>&lt;a&gt; &lt;/a&gt;</code></td>
+        <td>Etiqueta utilizada para crear hiperenlaces en el documento HTML</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;strong&gt; &lt;/strong&gt;</code></td>
+        <td>Etiqueta para definir una palabra o conjunto de ellas como importantes.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;small&gt; &lt;/small&gt;</code></td>
+        <td>Utilizada para dejar un comentario aparte, del tipo una nota de derechos <br>de autoría, u otros textos que no son esenciales para la comprensión <br>del documento.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;cite&gt; &lt;/cite&gt;</code></td>
+        <td>Para indicar el título de una obra</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;sub&gt; &lt;/sub&gt;&lt;sup&gt; &lt;/sup&gt;</code></td>
+        <td>Etiquetas utilizadas para representar un subíndice o superíndice.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;mark&gt; &lt;/mark&gt;</code></td>
+        <td>Usada para resaltar texto</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;span&gt; &lt;/span&gt;</code></td>
+        <td>Etiqueta HTML sin ningún significado específico. Se usa conjuntamente <br>con los atributos «class» o «id» para atribuirle ciertas características.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;br&gt;</code></td>
+        <td>Etiqueta utilizada para crear un salto de línea</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+    </table>
+
+    <h2>ETIQUETAS PARA INCRUSTAR CONTENIDO</h2>
+    <table>
+        <tr>
+            <th>Etiqueta</th>
+            <th>Descripción</th>
+            <th>Ejemplo</th>
+            <th>Elemento adicional</th>
+          </tr>
+
+      <!--ETIQUETAS PARA INCRUSTAR CONTENIDO-->
+      <tr>
+        <td><code>&lt;img&gt; &lt;/img&gt;</code></td>
+        <td>Etiqueta para «pintar» una imagen en la página web.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;iframe&gt; &lt;/iframe&gt;</code></td>
+        <td>Es una etiqueta que sirve para anidar otro documento HTML dentro del <br>documento principal.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;embed&gt;</code></td>
+        <td>Usada para integrar una aplicación o contenido interactivo externo <br>que no suele ser HTML.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;object&gt; &lt;/object&gt;</code></td>
+        <td>Utilizada llamar a un recurso externo de la web. Este recurso será <br>tratado como una imagen, o un recurso externo para ser procesado por un plugin.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;video&gt; &lt;/video&gt;</code></td>
+        <td>Se usa para reproducir video en la página web junto a sus archivos <br>de audio y capciones asociadas.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;audio&gt; &lt;/audio&gt;</code></td>
+        <td>Usada para cargar en una web un archivo de audio o stream de audio.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;source&gt;</code></td>
+        <td>Permite a autores especificar recursos multimedia alternativos para <br>las etiquetas de &lt;video&gt; o &lt;audio&gt;</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;svg&gt; &lt;/svg&gt;</code></td>
+        <td>Se usa para llamar a una imagen vectorizada.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+    </table>
+
+    <h2>ETIQUETAS PARA LA CREACION DE TABLAS</h2>
+    <table>
+        <tr>
+            <th>Etiqueta</th>
+            <th>Descripción</th>
+            <th>Ejemplo</th>
+            <th>Elemento adicional</th>
+          </tr>
+
+      <!--ETIQUETAS PARA LA CREACION DE TABLAS-->
+      <tr>
+        <td><code>&lt;table&gt; &lt;/table&gt;</code></td>
+        <td>Etiquetas de apertura y cierre de una tabla. El resto de etiquetas de <br>la tabla han de ir siempre recogidas entre estas dos etiquetas.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;caption&gt; &lt;/caption&gt;</code></td>
+        <td>Usada para indicar el título de la tabla.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;colgroup&gt; &lt;/colgroup&gt;</code></td>
+        <td>Etiqueta utilizada para agrupar dos o más columnas de una tabla.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;tbody&gt; &lt;/tbody&gt;</code></td>
+        <td>Usada para describir los datos concretos de una tabla.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;thead&gt; &lt;/thead&gt;</code></td>
+        <td>Indica el bloque de filas que describen las etiquetas de las columnas <br>de la tabla.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;tfoot&gt; &lt;/tfoot&gt;</code></td>
+        <td>Indica los bloques de filas que describen los resúmenes, o datos totales <br>de una columna de una tabla.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;tr&gt; &lt;/tr&gt;</code></td>
+        <td>Se usa para indicar una fila de celdas de una tabla.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;td&gt; &lt;/td&gt;</code></td>
+        <td>Usada para definir una celda de una tabla.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;th&gt; &lt;/th&gt;</code></td>
+        <td>Etiqueta que se usa para definir el encabezado de una celda</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+    </table>
+
+    <h2>ETIQUETAS PARA LA CREACION DE FORMULARIOS</h2>
+    <table>
+        <tr>
+            <th>Etiqueta</th>
+            <th>Descripción</th>
+            <th>Ejemplo</th>
+            <th>Elemento adicional</th>
+          </tr>
+
+      <!--ETIQUETAS PARA LA CREACION DE FORMULARIOS-->
+      <tr>
+        <td><code>&lt;form&gt; &lt;/form&gt;</code></td>
+        <td>Etiqueta de apertura y cierre de un formulario de una página web. <br>El resto de etiquetas de formulario deben ir siempre <br>recogidas entre estas etiquetas de apertura y <br>cierre de formulario.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;fieldset&gt; &lt;/fieldset&gt;</code></td>
+        <td>Etiqueta que representa un conjunto o agrupación de elementos de un <br>formulario. «Pinta» un recuadro alrededor de las etiquetas que <br>estén contenidas dentro del &lt;fieldset&gt;</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;legend&gt; &lt;/legend&gt;</code></td>
+        <td>Etiqueta ligada a &lt;fieldset&gt;. Indica el título del &lt;fieldset&gt;</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;label&gt; &lt;/label&gt;</code></td>
+        <td>Se usa para definir el nombre o título de un control del formulario.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;input&gt;</code></td>
+        <td>Pinta un campo de introducción de datos para el usuario. Es de las <br>principales etiquetas de un formulario.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;button&gt; &lt;/button&gt;</code></td>
+        <td>Etiqueta utilizada para representar un botón en el formulario.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;select&gt; &lt;/select&gt;</code></td>
+        <td>Input que permite una selección entre un conjunto de opciones.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;option&gt; &lt;/option&gt;</code></td>
+        <td>Etiqueta ligada a &lt;select&gt;. Permite añadir diferentes opciones <br>al &lt;select&gt;</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+      <tr>
+        <td><code>&lt;textarea&gt; &lt;/textarea&gt;</code></td>
+        <td>Añade un campo al usuario para que pueda introducir texto en unas <br>líneas máximas de texto que el desarrollador puede definir.</td>
+        <td><p>Este es un párrafo.</p></td>
+        <td><p>Este es un elemento adicional</p></td>
+      </tr>
+
+    </table>
+</body>
+</html>
